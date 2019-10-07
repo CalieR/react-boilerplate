@@ -5,6 +5,12 @@ import App from './App'
 import DefaultErrorBoundary from './DefaultErrorBoundary'
 import './styles.css'
 
+// react-axe detects a11y issues but only in development mode:
+if (process.env.NODE_ENV === 'development') {
+  const axe = require('react-axe')
+  axe(React, ReactDOM, 1000)
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <DefaultErrorBoundary>

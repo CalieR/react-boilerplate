@@ -5,8 +5,11 @@ Following the egghead.io course on Modern Javascript Tooling with React, this re
 
 Setup includes:
 
-- testing with Jest
-- linting and formatting with Prettier and ESLint
-- accessibility issue checks
-- error boundary
-- style loader to import CSS automatically
+- Testing with Jest
+- Linting and formatting with Prettier and ESLint
+- React.StrictMode to avoid deprecated React API's
+- Accessibility issue checks with react-axe
+- Error boundary
+- Style loader to import CSS automatically
+- git Hooks with Husky to run linting, formatting and tests before committing
+- Hot loading in development
